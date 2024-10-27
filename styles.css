@@ -1,0 +1,191 @@
+/* Configurações Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #0d0d0d;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Hero Section */
+  .hero {
+    width: 100%;
+    padding: 100px 20px;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: #fff;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+  }
+  
+  .hero p {
+    font-size: 1.5rem;
+    margin-bottom: 1em;
+  }
+  
+  .button {
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff4081;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    transition: background 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #ff6580;
+  }
+  
+  /* About Section */
+  .about {
+    max-width: 800px;
+    margin: 50px 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1em;
+  }
+  
+  .about p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  
+  /* Qualities Section */
+  .qualities {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px 20px;
+    text-align: center;
+  }
+  
+  .qualities h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5em;
+  }
+  
+  .qualities-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .quality {
+    background-color: #6a11cb;
+    color: #fff;
+    width: 250px;
+    padding: 20px;
+    border-radius: 15px;
+    transition: transform 0.3s;
+  }
+  
+  .quality:hover {
+    transform: translateY(-10px);
+  }
+  
+  .quality h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5em;
+  }
+  
+  .quality p {
+    font-size: 1rem;
+  }
+  
+  /* Future Section */
+  .future {
+    max-width: 800px;
+    margin: 50px 20px;
+    padding: 20px;
+    background-color: #2575fc;
+    color: #fff;
+    border-radius: 15px;
+    text-align: center;
+  }
+  
+  .future h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1em;
+  }
+  
+  .future p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  
+  /* Rodapé */
+  footer {
+    width: 100%;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    font-size: 1rem;
+  }
+  
+  /* Partículas */
+  .particles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 0;
+  }
+  
+  .particle {
+    position: absolute;
+    background-color: #ffffff;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: move 5s linear infinite;
+  }
+  
+  /* Animação das partículas */
+  @keyframes move {
+    from {
+      transform: translateY(0) translateX(0);
+      opacity: 0.8;
+    }
+    to {
+      transform: translateY(100vh) translateX(calc(100vw * var(--direction)));
+      opacity: 0;
+    }
+  }
+  
+  /* Estilos das partículas individuais */
+  .particle:nth-child(1) { top: 10%; left: 20%; animation-duration: 3s; --direction: 0.2; }
+  .particle:nth-child(2) { top: 30%; left: 40%; animation-duration: 4s; --direction: -0.3; }
+  .particle:nth-child(3) { top: 50%; left: 60%; animation-duration: 5s; --direction: 0.1; }
+  .particle:nth-child(4) { top: 70%; left: 80%; animation-duration: 6s; --direction: -0.2; }
+  .particle:nth-child(5) { top: 90%; left: 10%; animation-duration: 4.5s; --direction: 0.3; }
+  .particle:nth-child(6) { top: 20%; left: 70%; animation-duration: 3.5s; --direction: -0.1; }
+  .particle:nth-child(7) { top: 80%; left: 30%; animation-duration: 4.2s; --direction: 0.2; }
+  .particle:nth-child(8) { top: 60%; left: 50%; animation-duration: 5.2s; --direction: -0.3; }
+  .particle:nth-child(9) { top: 40%; left: 90%; animation-duration: 6.2s; --direction: 0.3; }
+  .particle:nth-child(10) { top: 30%; left: 10%; animation-duration: 5.8s; --direction: -0.2;}  
